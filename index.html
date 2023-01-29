@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Formulario</title>
+</head>
+<body>
+    <main>
+        <form action="" class="formulario" id="formulario">
+            <!--TITULO-->
+            <h4>
+                <label class="formulario_titulo">Create Account</label>
+            </h4>
+            <!--GRUPO NOMBRE-->
+            <div class="formulario_grupo" id="grupo_nombre">
+                <label class="formulario_label">Nombre</label>
+                <div class="formulario_grupo-input">
+                    <input class="controls" type="text" name="Nombre" id="Nombre" >
+                    <img src="images\error-icon.svg" alt="" class="formulario_validacion-estado">
+                    <img src="images\success-icon.svg" class="formulario_validacion-estado2">
+                </div>   
+                <p class="formulario_input-error">Este campo solo admite letras</p> 
+                <p class="formulario_input-vacio">Rellene este campo</p> 
+            </div>
+            <!--GRUPO EMAIL-->
+            <div class="formulario_grupo" id="grupo_email">
+                <label class="formulario_label">Email</label>
+                <div class="formulario_grupo-input">
+                    <input class="controls" type="email" name="Email" id="Email" >
+                    <img src="images\error-icon.svg" class="formulario_validacion-estado">
+                    <img src="images\success-icon.svg" class="formulario_validacion-estado2">
+                </div>   
+                <p class="formulario_input-error">Email inválido</p>
+                <p class="formulario_input-vacio">Rellene este campo</p>  
+            </div>
+            <!--GRUPO CLAVE-->
+            <div class="formulario_grupo" id="grupo_clave">
+                <label class="formulario_label">Clave</label>
+                <div class="formulario_grupo-input">
+                    <input class="controls" type="password" name="Clave" id="Clave" >
+                    <img src="images\error-icon.svg" class="formulario_validacion-estado">
+                    <img src="images\success-icon.svg" class="formulario_validacion-estado2">
+                </div>   
+                <p class="formulario_input-error">No debe tener más de 8 carácteres</p> 
+                <p class="formulario_input-vacio">Rellene este campo</p> 
+            </div>
+            <!--GRUPO CLAVE2-->
+            <div class="formulario_grupo" id="grupo_clave2">
+                <label class="formulario_label">Confirme su clave</label>
+                <div class="formulario_grupo-input">
+                    <input class="controls" type="password" name="Clave2" id="Clave2" >
+                    <img src="images\error-icon.svg" class="formulario_validacion-estado">
+                    <img src="images\success-icon.svg" class="formulario_validacion-estado2">
+                </div>   
+                <p class="formulario_input-error">Las contraseñas no coinciden</p> 
+                <p class="formulario_input-vacio">Rellene este campo</p> 
+            </div>
+            <!--BOTON ENVIAR-->   
+            <div class="formulario_enviar">
+                <input class="botons" type="submit" value="ENVIAR" onclick="alerta()">     
+            </div>
+        </form>
+    </main>
+    <script src="index.js"></script>
+</body>
+</html>
